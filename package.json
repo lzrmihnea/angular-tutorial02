@@ -1,0 +1,34 @@
+{
+  "name": "note-wrangler",
+  "private": true,
+  "version": "0.0.0",
+  "description": "A Code School Angular Production.",
+  "repository": "https://**alyssa here**",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "*",
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "cookie-session": "*",
+    "csurf": "*",
+    "ejs": "*",
+    "express": "*",
+    "passport": "*",
+    "passport-local": "*",
+    "sequelize": "*",
+    "sqlite3": "*",
+    "underscore": "*"
+  },
+  "devDependencies": {
+    "bower": "*",
+    "grunt": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-watch": "*",
+    "node-inspector": "*"
+  },
+  "scripts": {
+    "postinstall": "node dbSeed.js",
+    "start": "node app.js",
+    "debug": "node-inspector --config ./inspector-config.json & node --debug app.js"
+  }
+}
